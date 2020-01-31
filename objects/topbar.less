@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* TOPBAR */
+
+// Prefixes and objects:
+// .topbar-
+
+.btn--topbar {
+  .popout-anchor > & {
+    border-radius: inherit;
+  }
+}
+
+.topbar {
+  display: flex;
+  height: @topbarHeight;
+  background: #fff;
+  padding-right: 10px;
+  .zIndex('nav',50);
+
+  &-logo {
+    width: ~"calc(2.5rem + 3.75px)";
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    height: 100%;
+    & svg {
+      width:75%;
+      height: 75%;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+}
+
